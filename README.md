@@ -1,1 +1,1 @@
-# A-Frame-Component-Web-Spatial-Mapping
+# A-Frame-Component-Web-VPS
