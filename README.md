@@ -60,4 +60,4 @@ In order to make the component work the following sample could be used:
 ### **Tech Stack**
 The project is powered by AFrame and Three.js. 
 ### **Demo**
-See demo of the component here: [Demo](https://img-particles.glitch.me/)
+See demo of the component here: [Demo](vps-component.glitch.me/)
