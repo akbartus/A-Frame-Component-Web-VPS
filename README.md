@@ -10,39 +10,54 @@ In order to use the component one should:
 1. Create a free acount on <a href="https://developers.immersal.com/"> Immersal's developer page</a>.
 2. Create a map using Immersal Mapper App (available on AppStore and PlayStore; it is free).
 3. Inside of Immersal's developer page take individual token and map id.
-3. Then use the pre
+3. Then use this component. 
+
 The component has the following attributes: 
+* modelURL: { type: "string" } - the url to GLTF/GLB file, which will be loaded and localized along with pointCloud. 
+* scale: { type: "vec3", default: { x: 0.5, y: 0.5, z: 0.5 } } - the scale of GLTF/GLB model
+* position: { type: "vec3", default: { x: 0, y: 0, z: 0 } } - position of GLTG/GLB model
+* rotation: { type: "vec3", default: { x: 0, y: 0, z: 0 } } - rotation of GLTG/GLB model
+* token: { type: "string" } - token, taken from Immersal's developer page
+* mapID: { type: "string" } - map id, taken from Immersal's developer page
+* mapType: { type: "int", default: 0, oneOf: [0, 1] } - the type of map to display. 0 - sparse point cloud, 1- dense point cloud.
+* pointCloudSize: { type: "int"} - the size of sparse point cloud, for example, 0.05.
 
-* modelURL: { type: "string" },
-* scale: { type: "vec3", default: { x: 0.5, y: 0.5, z: 0.5 } }, // scale
-* position: { type: "vec3", default: { x: 0, y: 0, z: 0 } }, // position
-* rotation: { type: "vec3", default: { x: 0, y: 0, z: 0 } }, // rotation in degrees
-* token: { type: "string" }, // token property
-* mapID: { type: "string" },
-* mapType: { type: "int", default: 0, oneOf: [0, 1] },
-* pointCloudSize: { type: "int"} // 0 - sparse map, 1 - dense map
-
-
-Example implementation is given below:
+In order to make the component work the following sample could be used:
 ```
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <script src='https://aframe.io/releases/1.3.0/aframe.min.js'></script>
-  <script src='js/image-particles-component.js'></script>
+    <title>A-Frame Component: Web VPS using Immersal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+    <!-- Immersal Configuration, component and stylesheet --> 
+    <script src="js/sdkconfig.js"></script>
+    <script src="js/vps-component.js" type="module"></script>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-  <a-scene>
-    <a-entity camera position="0 0 300" wasd-controls look-controls></a-entity>
-    <a-entity
-      image-particles="src: img/logo.png; particleSize: 5; particleCount: 4100; particleSpeed: 0.5; particleMotionDuration: 5"></a-entity>
+<!-- This is necessary to make DOM overlays work -->
+    <div id="overlay">
+        <span id="lochelp">Tap to localize</span><br />
+        <span id="locinfo">Successful localizations: 0/0</span>
+    </div>
+<!-- END -->
+    <a-scene vr-mode-ui="enabled: false">
+        <a-entity gltf-loader="pointCloudSize: 0.05; modelURL: example.glb; token: abcdefghijklmnopqrstuv; mapID: 99999; mapType: 0" visible="false"></a-entity>
     </a-scene>
+<!-- This is necessary -->
+    <div id="mapview">
+        <div id="canvas-parent"></div>
+    </div>
+<!-- END -->
 </body>
 </html>
 ```
 
-
 ### **Tech Stack**
 The project is powered by AFrame and Three.js. 
-
 ### **Demo**
 See demo of the component here: [Demo](https://img-particles.glitch.me/)
