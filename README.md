@@ -1,5 +1,4 @@
 # A-Frame-Component-Web-VPS
-<img alt="Screenshot" src="img/screenshot_1.jpg" width="600">
 
 ### **Description / Rationale**
 This is a A-Frame component which allows to do visual positioning. It is a simple wrapper for Immersal's REST API, written in Three.js. The component was developed and adapted based on instructions give by Takeshi Kada on using Immersal Viewer <a href="https://zenn.dev/tkada/articles/1b144d1a427148">in local environment</a>.  
