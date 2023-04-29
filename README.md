@@ -58,3 +58,6 @@ In order to make the component work the following sample could be used:
 
 ### **Tech Stack**
 The project is powered by AFrame and Three.js. 
+
+### **Limitations**
+It works on Android Chrome, and you should have the chrome://flags/#webxr-incubations set to 'enabled' if Chrome ver. is below 113. The latest chrome browsers have webxr incubations by default. iOS devices, unfortunately, are not supported for now. 
