@@ -55,6 +55,7 @@ In order to make the component work the following sample could be used:
 </body>
 </html>
 ```
+After entering camera mode (inside AR), direct your camera at the location you created your map and tap once on the screen. This will trigger localization of the point cloud and you should see the point cloud and/or GLTF model you loaded. Please note the counter for successful localizations at the top of the screen.  
 
 ### **Tech Stack**
 The project is powered by AFrame and Three.js. 
