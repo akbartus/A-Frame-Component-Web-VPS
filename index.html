@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>A-Frame Component: Web VPS using Immersal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+    <script src="js/sdkconfig.js"></script>
+    <script src="js/vps-component.js" type="module"></script>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+  
+</head>
+
+<body>
+    <div id="overlay">
+        <span id="lochelp">Tap to localize</span><br />
+        <span id="locinfo">Successful localizations: 0/0</span>
+    </div>
+    <a-scene vr-mode-ui="enabled: false">
+        <a-entity gltf-loader="pointCloudSize: 0.05; modelURL: ; token: ; mapID: ; mapType: 0" visible="false"></a-entity>
+    </a-scene>
+    <div id="mapview">
+        <div id="canvas-parent"></div>
+    </div>
+</body>
+</html>
