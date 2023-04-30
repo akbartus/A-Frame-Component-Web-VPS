@@ -1,5 +1,5 @@
 # A-Frame-Component-Web-VPS
-<img src="img/screenshot.gif" height="400">
+<img src="img/screenshot.gif" title="Video screen capture" alt="Video screen capture" height="400">
 <p float="left">
 <img src="img/glb.jpg" title="GLB model generated" alt="GLB model generated" height="250">
 <img src="img/dense.jpg" title="Dense map generated" alt="Dense map generated"  height="250">
