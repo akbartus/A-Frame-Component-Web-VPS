@@ -1,6 +1,8 @@
 # A-Frame-Component-Web-VPS
 <img src="img/screenshot.gif" height="400">
+<p float="left">
 <img src="img/glb.jpg" height="300"><img src="img/dense.jpg" height="300"><img src="img/sparse.jpg" height="300">
+</p>
 
 
 ### **Description / Rationale**
