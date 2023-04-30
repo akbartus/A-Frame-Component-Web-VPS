@@ -52,7 +52,7 @@ In order to make the component work the following sample could be used:
     </div>
 <!-- END -->
     <a-scene vr-mode-ui="enabled: false">
-        <a-entity gltf-loader="pointCloudSize: 0.05; modelURL: example.glb; token: abcdefghijklmnopqrstuv; mapID: 99999; mapType: 0" visible="false"></a-entity>
+        <a-entity webvps="pointCloudSize: 0.05; modelURL: example.glb; token: abcdefghijklmnopqrstuv; mapID: 99999; mapType: 0" visible="false"></a-entity>
     </a-scene>
 <!-- This is necessary -->
     <div id="mapview">
