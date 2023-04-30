@@ -1,7 +1,7 @@
 # A-Frame-Component-Web-VPS
 <img src="img/screenshot.gif" height="400">
 <p float="left">
-<img src="img/glb.jpg" alt="GLB model generated" height="200"><img src="img/dense.jpg" alt="Dense map generated" height="200"><img src="img/sparse.jpg" alt="Sparse map generated" height="200">
+<img src="img/glb.jpg" alt="GLB model generated" height="250"><img src="img/dense.jpg" alt="Dense map generated" height="250"><img src="img/sparse.jpg" alt="Sparse map generated" height="250">
 </p>
 
 
