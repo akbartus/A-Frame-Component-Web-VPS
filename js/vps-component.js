@@ -83,7 +83,7 @@ const pointCloudMaterial = new THREE.ShaderMaterial({
 });
 
 // Virtual Positioning System for A-Frame
-AFRAME.registerComponent("gltf-loader", {
+AFRAME.registerComponent("webvps", {
   schema: {
     modelURL: { type: "string" },
     scale: { type: "vec3", default: { x: 0.5, y: 0.5, z: 0.5 } }, // scale
