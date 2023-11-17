@@ -8,7 +8,7 @@
 
 
 ### **Description / Rationale**
-This is a A-Frame component which allows to do visual positioning on the web powered by Immersal. It is a wrapper for Immersal's REST API, written in Three.js.  
+This is an open-source A-Frame component which allows to do visual positioning on the web, written in Three.js.  
 
 ### **Instructions**
 
